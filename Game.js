@@ -86,8 +86,15 @@ class Game {
 
     }
 
-    if (player.distance <2200){
+    if (player.distance <2500){
 
+       if (keyIsDown(40)){
+
+  yVel-=0.9
+
+  }
+      
+      
     if (keyIsDown(38) && player.index !== null) {
 
       yVel += 0.9;
@@ -114,11 +121,7 @@ class Game {
   }
 
 
-  if (keyIsDown(40)){
-
-  yVel-=0.9
-
-  }
+ 
 
 
     player.xPos += xVel;
